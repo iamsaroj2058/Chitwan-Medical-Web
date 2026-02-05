@@ -27,34 +27,38 @@ const Footer = () => {
               >
                 <Linkedin className="h-4 w-4" />
               </Button>
+
+              {/* FAcebook Icon Part */}
               <a
                 href="https://www.facebook.com/chitwaneye/"
                 target="_blank"
-                // FIXED: target was set to URL incorrectly (target="https://...")
-                // WHY: target should be "_blank" to open in new tab
                 rel="noopener noreferrer"
                 aria-label="Visit our Facebook page"
-                // MOVED: Link now wraps button (was inside button - doesn't work!)
-                // WHY: <a> inside <Button> doesn't trigger navigation
               >
                 <Button
                   variant="ghost"
                   size="icon"
                   className="text-primary-foreground hover:bg-white/20 hover:text-accent h-10 w-10 transition-all hover:scale-110"
-                  // CHANGED: h-8→h-10 for consistency with other icons
-                  // WHY: All social icons should be same size
                 >
                   <Facebook className="h-5 w-5" />
-                  {/* CHANGED: h-4→h-5 */}
                 </Button>
               </a>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-primary-foreground hover:bg-white/20 h-9 w-9"
+
+              {/* Instagram Icon Part  */}
+              <a
+                href="https://www.facebook.com/chitwaneye/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
               >
-                <Instagram className="h-4 w-4" />
-              </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-primary-foreground hover:bg-white/20 hover:text-accent h-10 w-10 transition-all hover:scale-110"
+                >
+                  <Instagram className="h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
 
