@@ -7,8 +7,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
+import bookingQR from "@/assets/booking-qr.png";
 
 const AppointmentPage = () => {
   const scheduleHours = [
@@ -38,12 +45,16 @@ const AppointmentPage = () => {
           <div className="container mx-auto px-4">
             {/* Breadcrumb */}
             <div className="text-white mb-4 text-sm">
-              <a href="/" className="hover:text-accent">Home</a>
+              <a href="/" className="hover:text-accent">
+                Home
+              </a>
               <span className="mx-2">/</span>
               <span>Appointment</span>
             </div>
             {/* Heading */}
-            <h1 className="text-4xl md:text-6xl font-bold text-white">Book an Appointment</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white">
+              Book an Appointment
+            </h1>
           </div>
         </div>
       </section>
@@ -52,9 +63,12 @@ const AppointmentPage = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Book an Appointment</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Book an Appointment
+            </h2>
             <p className="text-foreground/70 max-w-2xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Convallis felis vita dolor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.
+              Book your appointment online with our healthcare specialists.
+              Choose your preferred date and time for a convenient consultation.
             </p>
           </div>
 
@@ -68,11 +82,25 @@ const AppointmentPage = () => {
                     <div className="bg-[#1F2B6C] text-white p-6">
                       <div className="grid md:grid-cols-2 gap-4 mb-4">
                         <div>
-                          <Label htmlFor="name" className="text-white/80 text-sm">Name</Label>
-                          <Input id="name" placeholder="Your name" className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2" />
+                          <Label
+                            htmlFor="name"
+                            className="text-white/80 text-sm"
+                          >
+                            Name
+                          </Label>
+                          <Input
+                            id="name"
+                            placeholder="Your name"
+                            className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2"
+                          />
                         </div>
                         <div>
-                          <Label htmlFor="gender" className="text-white/80 text-sm">Gender</Label>
+                          <Label
+                            htmlFor="gender"
+                            className="text-white/80 text-sm"
+                          >
+                            Gender
+                          </Label>
                           <Select>
                             <SelectTrigger className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2 focus:ring-0">
                               <SelectValue placeholder="Select Gender" />
@@ -88,22 +116,55 @@ const AppointmentPage = () => {
 
                       <div className="grid md:grid-cols-2 gap-4 mb-4">
                         <div>
-                          <Label htmlFor="email" className="text-white/80 text-sm">Email</Label>
-                          <Input id="email" type="email" placeholder="your@email.com" className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2" />
+                          <Label
+                            htmlFor="email"
+                            className="text-white/80 text-sm"
+                          >
+                            Email
+                          </Label>
+                          <Input
+                            id="email"
+                            type="email"
+                            placeholder="your@email.com"
+                            className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2"
+                          />
                         </div>
                         <div>
-                          <Label htmlFor="phone" className="text-white/80 text-sm">Phone</Label>
-                          <Input id="phone" placeholder="+977 (555) 000-0000" className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2" />
+                          <Label
+                            htmlFor="phone"
+                            className="text-white/80 text-sm"
+                          >
+                            Phone
+                          </Label>
+                          <Input
+                            id="phone"
+                            placeholder="+977 (555) 000-0000"
+                            className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2"
+                          />
                         </div>
                       </div>
 
                       <div className="grid md:grid-cols-2 gap-4 mb-4">
                         <div>
-                          <Label htmlFor="date" className="text-white/80 text-sm">Date</Label>
-                          <Input id="date" type="date" className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2" />
+                          <Label
+                            htmlFor="date"
+                            className="text-white/80 text-sm"
+                          >
+                            Date
+                          </Label>
+                          <Input
+                            id="date"
+                            type="date"
+                            className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2"
+                          />
                         </div>
                         <div>
-                          <Label htmlFor="time" className="text-white/80 text-sm">Time</Label>
+                          <Label
+                            htmlFor="time"
+                            className="text-white/80 text-sm"
+                          >
+                            Time
+                          </Label>
                           <Select>
                             <SelectTrigger className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2 focus:ring-0">
                               <SelectValue placeholder="Select Time" />
@@ -122,43 +183,81 @@ const AppointmentPage = () => {
 
                       <div className="grid md:grid-cols-2 gap-4 mb-4">
                         <div>
-                          <Label htmlFor="doctor" className="text-white/80 text-sm">Doctor</Label>
+                          <Label
+                            htmlFor="doctor"
+                            className="text-white/80 text-sm"
+                          >
+                            Doctor
+                          </Label>
                           <Select>
                             <SelectTrigger className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2 focus:ring-0">
                               <SelectValue placeholder="Select Doctor" />
                             </SelectTrigger>
                             <SelectContent className="bg-[#1F2B6C] border-white/20 text-white">
-                              <SelectItem value="dr-smith">Dr. John Smith</SelectItem>
-                              <SelectItem value="dr-johnson">Dr. Sarah Johnson</SelectItem>
-                              <SelectItem value="dr-williams">Dr. Michael Williams</SelectItem>
-                              <SelectItem value="dr-brown">Dr. Emily Brown</SelectItem>
+                              <SelectItem value="dr-smith">
+                                Dr. John Smith
+                              </SelectItem>
+                              <SelectItem value="dr-johnson">
+                                Dr. Sarah Johnson
+                              </SelectItem>
+                              <SelectItem value="dr-williams">
+                                Dr. Michael Williams
+                              </SelectItem>
+                              <SelectItem value="dr-brown">
+                                Dr. Emily Brown
+                              </SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
                         <div>
-                          <Label htmlFor="department" className="text-white/80 text-sm">Department</Label>
+                          <Label
+                            htmlFor="department"
+                            className="text-white/80 text-sm"
+                          >
+                            Department
+                          </Label>
                           <Select>
                             <SelectTrigger className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 rounded-none mt-2 focus:ring-0">
                               <SelectValue placeholder="Select Department" />
                             </SelectTrigger>
                             <SelectContent className="bg-[#1F2B6C] border-white/20 text-white">
-                              <SelectItem value="cardiology">Cardiology</SelectItem>
-                              <SelectItem value="neurology">Neurology</SelectItem>
-                              <SelectItem value="orthopedics">Orthopedics</SelectItem>
-                              <SelectItem value="dermatology">Dermatology</SelectItem>
+                              <SelectItem value="cardiology">
+                                Cardiology
+                              </SelectItem>
+                              <SelectItem value="neurology">
+                                Neurology
+                              </SelectItem>
+                              <SelectItem value="orthopedics">
+                                Orthopedics
+                              </SelectItem>
+                              <SelectItem value="dermatology">
+                                Dermatology
+                              </SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
                       </div>
 
                       <div>
-                        <Label htmlFor="message" className="text-white/80 text-sm">Message</Label>
-                        <Textarea id="message" placeholder="Tell us your message..." className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 min-h-32 rounded-none resize-none mt-2" />
+                        <Label
+                          htmlFor="message"
+                          className="text-white/80 text-sm"
+                        >
+                          Message
+                        </Label>
+                        <Textarea
+                          id="message"
+                          placeholder="Tell us your message..."
+                          className="bg-transparent border-b border-white/20 text-white placeholder:text-white/60 min-h-32 rounded-none resize-none mt-2"
+                        />
                       </div>
                     </div>
 
                     {/* Submit button */}
-                    <Button type="submit" className="w-full bg-[#C8D8FF] text-[#1F2B6C] hover:bg-[#B8C8FF] font-semibold py-3 rounded-none">
+                    <Button
+                      type="submit"
+                      className="w-full bg-[#C8D8FF] text-[#1F2B6C] hover:bg-[#B8C8FF] font-semibold py-3 rounded-none"
+                    >
                       SUBMIT
                     </Button>
                   </form>
@@ -169,30 +268,37 @@ const AppointmentPage = () => {
             {/* Right Column - Schedule Hours and Emergency */}
             <div className="space-y-0 flex flex-col">
               {/* Schedule Hours and Emergency Combined Card */}
-              <Card className="bg-[#1F2B6C] text-white border-0 shadow-2xl rounded-2xl overflow-hidden flex flex-col h-full">
+              <Card className="bg-[#C8D8FF] text-text-[#1F2B6C] border-0 shadow-2xl rounded-2xl overflow-hidden flex flex-col h-full">
                 <CardContent className="p-10 flex flex-col flex-1">
                   <h3 className="text-3xl font-bold mb-12">Schedule hours</h3>
                   <div className="space-y-5 flex-1">
                     {scheduleHours.map((schedule, index) => (
-                      <div key={index} className="flex items-center justify-between gap-8">
-                        <span className="text-white font-medium flex-1">{schedule.day}</span>
-                        <span className="text-white/40">—</span>
-                        <span className="text-white font-semibold flex-1 text-right">{schedule.time}</span>
+                      <div
+                        key={index}
+                        className="flex items-center justify-between gap-8"
+                      >
+                        <span className="text-[#1F2B6C] font-medium flex-1">
+                          {schedule.day}
+                        </span>
+                        <span className="text-[#1F2B6C]/40">—</span>
+                        <span className="text-[#1F2B6C] font-semibold flex-1 text-right">
+                          {schedule.time}
+                        </span>
                       </div>
                     ))}
                   </div>
 
                   {/* Divider */}
-                  <div className="border-t border-white/20 my-10"></div>
+                  <div className="border-t border-[#1F2B6C]/20 my-10"></div>
 
                   {/* Emergency Section */}
                   <div className="flex items-center justify-center gap-5">
-                    <div className="bg-white/20 p-4 rounded-full flex-shrink-0">
-                      <Phone className="h-6 w-6 text-white" />
+                    <div className="bg-[#1F2B6C]/20 p-4 rounded-full flex-shrink-0">
+                      <Phone className="h-6 w-6 text-[#1F2B6C]e" />
                     </div>
                     <div className="text-center">
                       <h3 className="text-lg font-bold">Emergency</h3>
-                      <p className="text-white/80">(+977) 56490799</p>
+                      <p className="text-[#1F2B6C]/80">(+977) 56490799</p>
                     </div>
                   </div>
                 </CardContent>
@@ -205,7 +311,7 @@ const AppointmentPage = () => {
       {/* Map Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-            <div className="flex justify-center">
+          <div className="flex justify-center">
             <iframe
               width="80%"
               height="400"
@@ -216,8 +322,8 @@ const AppointmentPage = () => {
         </div>
       </section>
 
-        {/* Contact Section */}
-        <Contact />
+      {/* Contact Section */}
+      <Contact />
 
       <Footer />
     </div>
