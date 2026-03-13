@@ -100,7 +100,7 @@ const Header = () => {
               Services
             </a>
             <a href="/doctors" className={navLinkClass("/doctors")}>
-              Doctors
+              Our Teams
             </a>
             <a href="/contact" className={navLinkClass("/contact")}>
               Contact
@@ -153,7 +153,7 @@ const Header = () => {
                 className={mobileNavLinkClass("/doctors")}
                 onClick={toggleMenu}
               >
-                Doctors
+                Our Teams
               </a>
               <a
                 href="/contact"
