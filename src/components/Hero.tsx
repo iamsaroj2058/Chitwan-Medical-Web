@@ -30,7 +30,8 @@ const Hero = () => {
               Caring for life
             </p>
             <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight text-foreground">
-              Caring for Every Life, Every Day
+              We care ,<br />
+              Your Sight
             </h1>
             <a href="/services">
               <Button
