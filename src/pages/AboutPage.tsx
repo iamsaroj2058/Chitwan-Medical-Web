@@ -21,18 +21,18 @@ const AboutPage = () => {
   const testimonials = [
     {
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Quisque placerat scelerisque felis vitae tortor augue. Velit nascetur Consequat faucibus porttitor enim et.",
-      author: "John Doe",
+        "The doctors and staff were extremely professional and caring. My cataract surgery was successful and my vision has improved greatly. Highly recommended.",
+      author: "Patient Review",
     },
     {
       quote:
-        "Exceptional care and professional staff. The team is dedicated to patient satisfaction and provides outstanding medical services with compassion.",
-      author: "Jane Smith",
+        "Very good hospital with experienced eye specialists. The treatment process was smooth and the staff made me feel comfortable throughout my visit.",
+      author: "Local Patient",
     },
     {
       quote:
-        "Amazing experience at this hospital. The doctors are highly skilled and the facilities are top-notch. Highly recommended!",
-      author: "Michael Johnson",
+        "Excellent service and modern facilities. I received clear explanations and proper care for my eye condition.",
+      author: "Satisfied Visitor",
     },
   ];
 
